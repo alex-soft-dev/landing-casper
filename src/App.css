@@ -1,0 +1,1336 @@
+
+@font-face {
+    font-family: Bw Gradual DEMO;
+    src: url('./assets/font/BGD/BwGradualDEMO-Regular.otf');
+}
+@font-face {
+    font-family: Bw Gradual DEMO Bold;
+    src: url('./assets/font/BGD/BwGradualDEMO-Bold.otf');
+}
+@font-face {
+    font-family: Bw Gradual DEMO Extra Bold;
+    src: url('./assets/font/BGD/BwGradualDEMO-ExtraBold.otf');
+}
+  
+@font-face {
+    font-family: Roboto;
+    src: url('./assets/font/Roboto/Roboto-Regular.ttf');
+}
+      
+
+
+* {
+    font-family: Bw Gradual DEMO;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: ease-in-out 0.3s;
+}
+
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 8rem;
+    right: 3rem;
+    animation: fadeIn 700ms ease-in-out 1s both;
+    cursor: pointer;
+    z-index: 99999;
+}
+
+.scroll-to-top:hover {
+    box-shadow: 0 0 20px #eee !important;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+.App {
+    background: #6239F2;
+}
+
+button {
+    transition: 0.5s;
+    font-family: Roboto;
+}
+
+button:hover {
+    box-shadow: 0 0 20px #eee !important;
+}
+
+/* TOP SECTION */
+.top {
+    width: 100%;
+    background-image: url('./assets/img/top/overlayer.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.top .m-container {
+    padding: 0 4em;
+    position: relative;
+}
+
+.header .t-btn {
+    margin-top: 0;
+    font-size: 13px;
+    width: 10em;
+}
+
+.top .header{
+    margin: 0 -3em;
+}
+
+@media screen and (min-width: 768px) {
+    .top .header{
+        margin: 0 -8em;
+    }
+}
+
+.top .t-btn.wide {
+    width: 16em;
+    margin-right: 3em;
+}
+.top .header .logo-img {
+    width: 233.9px;
+    height: 31.62px;
+}
+.top .header .m-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.header .header a.n-link {
+    font-family: Bw Gradual DEMO;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.57);
+    margin-left: 2em;
+    text-decoration: none;
+}
+.header .header a.n-link:hover, .header .header a.n-link.active {
+    color: white;
+}
+.header button {
+    text-transform: none;
+    font-family: Roboto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 1em;
+    margin-top: 1rem;
+    border: 1px solid #FFFFFF;
+}
+.top .main {
+    padding-top: 10em;
+}
+.top .main .left .title {
+    font-family: Bw Gradual DEMO;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 60px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;    
+    color: #FFFFFF;
+}
+.top .left .title b {
+    font-size: 40px;
+    font-family: Bw Gradual DEMO Extra Bold;
+}
+.top .left .description {
+    width: 66%;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(255, 255, 255, 0.87);
+}
+.top button {
+    text-transform: none;
+    font-family: Roboto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 1em;
+    margin-top: 1rem;
+    border: 1px solid #FFFFFF;
+}
+.top .buttons {
+    margin-right: -10rem;
+}
+
+.top button.rbtn {
+    color:#6239f2;
+    background: #FFFFFF;
+    margin-right: 15px;
+}
+
+.top .right {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    min-height: 500px;
+}
+
+.top .right .t-card {
+    margin-right: .5em;
+    position: absolute;
+    width: 411.36px;
+    /* height: 483.39px; */
+    background: radial-gradient(97.57% 210.75% at 0.9% 2.98%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(27.2723px);
+    border-radius: 13.6361px;
+    padding: 2em;
+    transition: ease 1s;
+}
+.top .right .yellipse {
+    position: absolute;
+}
+.top .right .xxLogo {
+    width: 90px;
+    height: auto;
+}
+.top .right .tl {
+    font-family: Bw Gradual DEMO;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18.1815px;
+    line-height: 22px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: rgba(98, 57, 242, 0.5);
+    margin: 9.09076px 0px;
+}
+.top .right .pr {
+    font-family: Bw Gradual DEMO;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24.2723px;
+    line-height: 33px;
+    letter-spacing: 0.16em;
+    text-transform: capitalize;
+    color: #6239F2;
+    margin-bottom: 30px;
+}
+
+.top .right .detail .copy-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: .2em 1em;
+    background: rgba(238, 238, 238, 0.2);
+    border: 1.13635px solid rgba(238, 238, 238, 0.1);
+    border-radius: 1em;
+    margin: 0;
+}
+.top .right .copy-bar .copy-text {
+    color: #606060;
+}
+.top .right .copy-bar .copy-btn {
+    background: #6239F2;
+    border-radius: 1em;
+    margin: .2em 0;
+    border: none;
+    padding: .75em 1em;
+}
+/* END TOP */
+
+
+
+
+/* ABOUT US */
+.about {
+    margin-top: 5em;
+    width: 100%;
+    background-image: url('./assets/img/about/overlayer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.about .over {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url('./assets/img/about/overlayer2.png');
+}
+.about .header {
+    text-align: center;
+}
+.about .header .title {
+    text-transform: uppercase;
+    font-family: Bw Gradual DEMO Extra Bold;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.16em;
+    color: #FFFFFF;
+}
+.about .header .description {
+    width: 625px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.16em;
+    color: #FFFFFF;
+    margin: auto;
+}
+.about .header .roll-item {
+    display: flex;
+    position: relative;
+    width: 400px;
+    height: 200px;
+}
+.about .header .roll-item img {
+    margin: auto;
+    padding-top: 50px;
+    padding-left: 15px;
+}
+.about #circle { 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.about #circle text { 
+    font-family: Bw Gradual DEMO;
+    font-size: 38px; 
+    letter-spacing: .2em;
+    font-weight: bold; 
+    color: white;
+}
+.about #circle svg { 
+    z-index: 2;
+    position: absolute; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 250px;
+
+  -webkit-animation-name: rotate;
+     -moz-animation-name: rotate;
+      -ms-animation-name: rotate;
+       -o-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 20s;
+     -moz-animation-duration: 20s;
+      -ms-animation-duration: 20s;
+       -o-animation-duration: 20s;
+          animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+      -ms-animation-iteration-count: infinite;
+       -o-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+      -ms-animation-timing-function: linear;
+       -o-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotate {
+    from { -webkit-transform: rotate(360deg); }
+    to { -webkit-transform: rotate(0); }
+}
+@-moz-keyframes rotate {
+    from { -moz-transform: rotate(360deg); }
+    to { -moz-transform: rotate(0); }
+}
+@-ms-keyframes rotate {
+    from { -ms-transform: rotate(360deg); }
+    to { -ms-transform: rotate(0); }
+}
+@-o-keyframes rotate {
+    from { -o-transform: rotate(360deg); }
+    to { -o-transform: rotate(0); }
+}
+@keyframes rotate {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0); }
+}
+
+
+.bottom-para {
+    font-size: 1.2em;
+    color: white;
+    margin-bottom: 5em;
+    text-align: center;
+}
+
+.bottom-para .title {
+    text-transform: uppercase;
+    font-family: Bw Gradual DEMO Extra Bold;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.16em;
+    color: #FFFFFF;
+}
+
+.bottom-para .description {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.16em;
+    color: #FFFFFF;
+    margin: auto;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .bottom-para .left-para {
+        margin-left: 7em;
+    }
+    
+    .bottom-para .right-para {
+        margin-left: auto;
+        margin-right: 7em;
+    }
+}
+
+/* END */
+
+
+/* Gota */
+.gota {
+    position: relative;
+    background: #191919;
+    overflow: hidden;
+    width: 100%;
+}
+.gota .over {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./assets/img/tfeed/over.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gota .main {
+    z-index: 1;
+    width: 20%;
+    margin-left: 5em;
+}
+.gota .main .title {
+    width: 80%;
+    font-size: 36px;
+    line-height: 54px;    
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #FFFFFF;    
+}
+.gota .main .title b {
+    font-family: Bw Gradual DEMO Extra Bold;
+}
+.gota .main .fill-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 20px;
+    background: #6239F2;
+    border-radius: 8px;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+}
+
+.b-c-p {
+    background: #6239F2;
+}
+
+.vision .title {
+    font-family: Bw Gradual DEMO Extra Bold;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.16em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.vision .description {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 0.16em;
+    color: #FFFFFF;
+    width: 62%;
+    margin: auto;
+}
+.vision .green-bold {
+    color: #3FD3B8;
+}
+
+/* END */
+
+
+
+
+/* TOKENOMICS */
+.tokenomics {
+    background: #191919;
+    position: relative;
+}
+.tokenomics .over {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/img/tokenomics/over.png);
+    background-size: cover;
+    background-position: center;
+}
+.tokenomics .header .title {
+    font-family: Bw Gradual DEMO Extra Bold;
+    font-size: 24px;
+    line-height: 24px;    
+    text-align: center;
+    letter-spacing: 0.16em;
+    color: #FFFFFF;
+}
+.tokenomics .token-item {
+    width: 189px;
+    height: 175px;
+    margin: 3rem 3rem;
+    background: url('./assets/img/tokenomics/item-back.png');
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    padding: 1.6em;
+    transition: ease-in-out 0.3s;
+}
+.tokenomics .token-item:hover {
+    background: url('./assets/img/tokenomics/item-back-over.png');
+}
+.tokenomics .token-item .token-img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+.tokenomics .token-item .token-img .blur {
+    position: absolute;
+    left: 0;
+}
+.tokenomics .token-item:hover .token-img .blur {
+    filter: blur(1px);
+}
+.tokenomics .token-item .pro-num {
+    padding: .2em 0;
+    margin: 0;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 43px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.tokenomics .token-item .desc-block {
+    margin-top: -.5em;
+}
+.tokenomics .token-item .desc {
+    padding-top: 1.2em;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.tokenomics .token-item .icon {
+    width: 24px;
+    height: 24px;
+}
+/* END */
+
+
+
+
+
+/* ROAD MAP */
+.roadmap {
+    position: relative;
+    width: 100%;
+    background-image: url('./assets/img/roadmap/overlay.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.roadmap .back {
+    position: absolute;
+    z-index: 2;
+    width: 938.94px;
+    height: 496.94px;
+    left: 951px;
+    top: -183px;
+    background: linear-gradient(0deg, #6239F2, #6239F2), url('./assets/img/roadmap/bg.png');
+    background-blend-mode: color, normal;
+    filter: blur(200px);
+    transform: matrix(1, 0.01, 0.01, 1, 0, 0);
+}
+.roadmap .m-container {
+    /* position: absolute; */
+    /* z-index: 3; */
+    width: 100%;
+    margin: 10em auto;
+}
+.roadmap .header .title {
+    font-family: Bw Gradual DEMO Extra Bold;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0.16em;
+    color: #FFFFFF;
+}
+.roadmap .header .description {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+.roadmap .header .link {
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin-right: 1em;
+}
+.roadmap .header .link i {
+    padding-top: .1em;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+.roadmap .header .link.disable {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.roadmap .header .link.disable i {
+    padding-top: .1em;
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.2);
+}
+.roadmap .up {
+    position: relative;
+}
+.roadmap .line {
+    margin-top: 50px;
+}
+.roadmap .line:before {
+    content: '';
+    margin-left: 60px;
+    margin-right: 80px;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+.roadmap .down {
+    margin-top: 50px;
+    position: relative;
+}
+.roadmap .m-item {
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    background-color: transparent;
+    backdrop-filter: blur(42px);
+    color: white;
+    padding: 0;
+    text-align: center;
+    height: 120px;
+}
+.roadmap .card.m-item:hover{
+    border: 2px solid #CAF239;
+    margin: -1px 0;
+}
+.roadmap .card.n-item:hover{
+    border: 2px solid #CAF239;
+    margin: -1px 0 1px 0;
+}
+.roadmap .up .m-item:hover .card-body::after{
+    border: 2px solid #CAF239;
+    margin-left: 0px;
+}
+.roadmap .m-item:hover::after{
+    background-color: #CAF239 !important;
+}
+.roadmap .up .m-item .card-body::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: rgba(255, 255, 255, 0.6);
+    top: 118px;
+    bottom: -55px;
+    left: calc(50% - 1px);
+    /* margin-left: -3px; */
+}
+.roadmap .up .m-item::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    top: 162px;
+    left: calc(50% - 7px);
+    border-radius: 50%;
+    z-index: 1;
+}
+/* down card item */
+.roadmap .down .m-item .card-body::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: rgba(255, 255, 255, 0.6);
+    top: -55px;
+    bottom: 118px;
+    left: calc(50% - 1px);
+    margin-left: -3px;
+}
+.roadmap .down .card:hover .card-body::before {
+    border: 2px solid #CAF239;
+    margin-left: -3px;
+}
+.roadmap .down .card:hover::before {
+    background-color: #CAF239 !important;
+}
+.roadmap .down .n-item .card-body::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: rgba(255, 255, 255, 0.6);
+    top: -55px;
+    bottom: 148px;
+    left: calc(50% - 1px);
+    margin-left: -3px;
+}
+.roadmap .down .card::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    top: -59px;
+    left: calc(50% - 9px);
+    border-radius: 50%;
+    z-index: 1;
+}
+.roadmap .color-gry {
+    color: rgba(255, 255, 255, 0.57);
+}
+.roadmap .m-item .card-header {
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(42px);
+}
+.roadmap .m-item .card-body {
+    padding: 5px;
+}
+.roadmap .n-item {
+    background: radial-gradient(97.57% 210.75% at 0.9% 2.98%, rgba(98, 57, 242, 0.51) 0%, rgba(98, 57, 242, 0.1) 100%);
+    backdrop-filter: blur(42px);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    color: white;
+    padding: 0;
+    text-align: center;
+    /* height: 145px; */
+}
+.roadmap .n-item .card-header {
+    padding: 5px;
+}
+.roadmap .n-item .card-body {
+    padding: 5px;
+    padding-bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+}
+.roadmap .main .up {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+}
+.roadmap .main .down {
+    z-index: 1;
+    top: 220px;
+    position: absolute;
+    width: 100%;
+}
+.roadmap .main hr.line {
+    position: absolute;
+    z-index: 0;
+    top: 170px;
+    height: 2px;
+    background-color: #FFFFFF;
+}
+/* END */
+
+
+/* Twitterfeed */
+.tfeed {
+    background: #191919;
+    position: relative;
+    overflow: hidden;
+}
+.tfeed .over {
+    position: absolute;
+    width: 100%;
+    height: 550px;
+    background-image: url('./assets/img/tfeed/over.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tfeed .header {
+    padding-top: 3rem;
+}
+.tfeed .header .title {
+    font-family: Bw Gradual DEMO Extra Bold;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    padding-bottom: .5em;
+}
+
+.tfeed .header .description {
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    padding-bottom: 3em;
+}
+.tfeed .header .link {
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin-right: 1em;
+}
+.tfeed .header .link i {
+    padding-top: .1em;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+.tfeed .header .link.disable {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.tfeed .header .link.disable i {
+    padding-top: .1em;
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.2);
+}
+.tfeed .lists .cards {
+    width: 100%;
+    justify-content: space-around;
+}
+.tfeed .lists .cards .card {
+    /* width: 30%; */
+    width: 400px;
+    min-height: 200px;
+    background: radial-gradient(97.57% 210.75% at 0.9% 2.98%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(24px);
+    border-radius: 12px;
+    padding: 2em;
+    border: 1px solid #FFFFFF;
+}
+.tfeed .lists .card .avatar {
+    vertical-align: middle;
+    width: 70px;
+    /* width: 80%; */
+    border-radius: 50%;
+}
+.tfeed .lists .card .name {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F7F7F7;
+}
+.tfeed .lists .card .email {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.5);
+    border-radius: 60px;
+}
+.tfeed .lists .card .social-icon {
+    color: white;
+    font-size: 25px;
+}
+.tfeed .lists .card .text {
+    margin-top: 1rem;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F7F7F7;
+}
+.tfeed .lists .card .text .green {
+    color: #3FD3B8;
+}
+
+.tfeed .teches {
+    margin: 34px 0px 1px 0;
+}
+
+.tfeed .teches .card {
+    z-index: 1;
+    background: radial-gradient(97.57% 210.75% at 0.9% 2.98%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(54px);
+    opacity: 0.8;
+    border-radius: 12px;
+    text-align: center;
+    padding: 1em;
+    transition: ease 0.2s;
+}
+.tfeed .teches .card .title {
+    padding: 2em 25%;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.tfeed .teches .card .web-view {
+    display: block;
+}
+
+.tfeed .teches .card .mobile-view {
+    display: none;
+}
+
+.tfeed .teches .card .item {
+    width: auto;
+    height: 60px;
+    margin: 1em;
+}
+
+.tfeed .teches .card .item1 {
+    width: auto;
+    height: 100px;
+    margin: 1em;
+}
+
+.tfeed .spray-over {
+    position: absolute;
+    bottom: -30em;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/img/tfeed/down/over.png);
+    background-size: 100% cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.tfeed .down {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.tfeed .down .inner {
+    width: 100%;
+}
+.tfeed .down .main {
+    margin: 5rem 0;
+    padding: 1rem 1rem;
+    z-index: 2;
+}
+.tfeed .down .title {
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+.tfeed .down button {    
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    border-radius: 8px;
+    min-height: 50px;
+    margin-top: 10px;
+    text-transform: none;
+}
+.tfeed .down button.rbtn {
+    color:#6239f2;
+    background: #FFFFFF;
+}
+.tfeed .down button.gbtn {
+    border: 1px solid #FFFFFF;
+}
+/* END */
+
+
+/* Footer */
+.footer {
+    position: relative;
+    background: #000000;
+}
+.footer .main {
+    flex-direction: row;
+}
+
+.footer .main .logo .inner{
+    margin: auto;
+}
+
+.footer .logo-img {
+    width: 40px;
+}
+.footer .logo-text {
+    font-family: Bw Gradual DEMO;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.footer .main .eula {
+    display: flex;
+    /* width: auto; */
+}
+
+.footer .main .eula .copyright {
+    margin: auto;
+    text-align: left;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.footer .links {
+    justify-content: start;
+    margin: auto;
+    width: auto;
+}
+
+.footer .links .link {
+    width: auto;
+    margin-left: 3em;
+    padding: 0;
+}
+
+.footer .links .link:first-child {
+    margin-left: 1em;
+}
+
+@media screen and (min-width: 768px) {
+    .footer .copyright {
+        text-align: center;
+    }  
+    .footer .links {
+        justify-content: flex-end;
+    }
+}
+
+
+.team .team-header {
+    text-align: center;
+}
+
+.team .team-header .title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 60px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.team .team-header .navbar {
+    display: flex;
+}
+
+.team .team-header .m-nav {
+    width: auto;
+    margin: auto;
+}
+
+.team .team-header a.n-link.bright {
+    color: #FFFFFF;
+}
+
+.team .team-header a.n-link {
+    color: #9D83F7;
+}
+
+.team .team-header a.n-link:hover, .team .team-header a.n-link:active {
+    color: #FFFFFF;
+}
+
+.team .team-main {
+    background: #141317;
+}
+
+.team .team-main .member-panel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+.team .team-main .member {
+    /* height: 450px; */
+    /*width: 353px; */
+    margin: 10px;
+    background: #1E1B2C;
+    box-shadow: 24px 24px 48px rgba(0, 0, 0, 0.05);
+    border-radius: 24px;
+}
+
+.team .team-main .member .image-panel {
+    display: flex;
+}
+
+.team .team-main .member .image {
+    border-radius: 20px 20px 0 0;
+    margin: 10px auto 0;
+}
+
+.team .team-main .member .main-panel {
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.05);
+}
+
+.team .team-main .member .main-panel .main-inner {
+    flex-wrap: unset;
+}
+
+.team .team-main .member .main-panel .main-inner .profile {
+    width: 70%;
+}
+
+.team .team-main .member .main-panel .main-inner .name {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.04em;
+}
+
+.team .team-main .member .main-panel .main-inner .position {
+    font-style: normal;
+    font-weight: 250;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.08em;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.team .team-main .member .main-panel .main-inner .social {
+    text-align: right;
+}
+
+.team .team-main .member .main-panel .main-inner .social .linkedIn {
+    width: 24px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.team .team-main .member .main-panel .main-inner .social .twitter {
+    width: 24px;
+    height: 20px;
+}
+
+.team .team-main .member .footer-panel {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.08em;
+    color: #696464;
+}
+
+.bottom {
+    background: #141317;
+    background-image: url(./assets/img/team/bottom-web-effect.png);
+    background-size: cover;
+}
+
+.bottom .down {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.bottom .down .inner {
+    width: 100%;
+}
+.bottom .down .main {
+    margin: 5rem 0;
+    padding: 1rem 5rem;
+    z-index: 2;
+}
+.bottom .down .title {
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+.bottom .down button {    
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    border-radius: 8px;
+    min-height: 50px;
+    margin-top: 10px;
+    text-transform: none;
+}
+.bottom .down button.rbtn {
+    color:#6239f2;
+    background: #FFFFFF;
+}
+.bottom .down button.gbtn {
+    border: 1px solid #FFFFFF;
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .top .m-container {
+        padding: 0 1em;
+    }
+
+    .top .left .title b {
+        font-size: 24px;
+    }
+
+    .top .main .left .title {
+        font-size: 24px;
+    }
+
+    .top .left .description {
+        width: 100%;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 32px;
+        color: rgba(255, 255, 255, 0.87);
+    }
+
+    .top .buttons {
+        margin-right: 0;
+    }
+
+    .top .buttons button.rbtn {
+        margin-right: 0;
+    }
+
+    .top .buttons button {
+        width: 100%;
+    }
+
+
+    .team .team-header .title {
+        font-size: 16px;
+    }
+
+    .team .team-main .member {
+        margin: 8px 20px;
+    }
+
+    .top .right .yellipse {
+        left: -10px;
+        width: 105%;
+    }
+
+    .top .right .t-card {
+        left: 0em;
+        width: 356px;
+    }
+
+    .gota .main {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .gota .main .title {
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .gota .main .fill-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .vision .description {
+        width: 90%;
+        font-size: 20px;
+    }
+
+    .tokenomics .token-item {
+        margin: 0.3rem 0.3rem;
+        width: 180px;
+        height: 170px;
+    }
+
+    .tokenomics .token-item:last-child {
+        width: 339px;
+        background: url('./assets/img/tokenomics/item-back.png');
+        background-size: cover;
+    }
+
+    .bottom .down .main {
+        padding: 1rem 0rem;
+    }
+
+    .bottom .down .title {
+        font-size: 19px;
+    }
+
+    .tfeed .teches .card .title {
+        padding: 2em 1em;
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .tfeed .teches .card .web-view {
+        display: none;
+    }
+    
+    .tfeed .teches .card .mobile-view {
+        display: block;
+    }
+
+    .tfeed .lists {
+        overflow-x: scroll;
+    }
+
+    .tfeed .lists .tweets {
+        width: 230%;
+    }
+
+    .tfeed .lists .tweets .tweet {
+        width: auto;
+    }
+
+    .top .main {
+        padding-top: 0em;
+    }
+
+    .roadmap {
+        overflow-x: scroll;
+    }
+
+    .roadmap .m-container {
+        width: 800px;
+    }
+    
+    .bottom {
+        background-position-x: center;
+    }
+}
+/* END */
